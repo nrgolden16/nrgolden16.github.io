@@ -28,7 +28,6 @@
             overflow-x: hidden;
         }
 
-        /* Starfield background */
         body::before {
             content: '';
             position: fixed;
@@ -87,7 +86,6 @@
             to   { opacity: 1; transform: translateY(0); }
         }
 
-        /* Gold border frame */
         .frame {
             margin: 18px;
             border: 1px solid rgba(201,168,76,0.4);
@@ -114,14 +112,11 @@
         .frame-inner-tl { top: -1px; right: -1px; border-width: 2px 2px 0 0; }
         .frame-inner-br { bottom: -1px; left: -1px; border-width: 0 0 2px 2px; }
 
-        /* Header */
         .header { margin-bottom: 44px; }
 
-        .crown {
-            font-size: 2rem;
-            line-height: 1;
-            margin-bottom: 12px;
-            animation: float 3s ease-in-out infinite;
+        .floral-ornament {
+            margin: 0 auto 18px;
+            animation: float 4s ease-in-out infinite;
         }
         @keyframes float {
             0%, 100% { transform: translateY(0); }
@@ -172,7 +167,6 @@
             letter-spacing: 3px;
         }
 
-        /* Section */
         .section { margin: 36px 0; }
 
         .section-title {
@@ -203,7 +197,6 @@
             background: linear-gradient(to left, transparent, var(--gold));
         }
 
-        /* Schedule */
         .schedule-list { display: flex; flex-direction: column; gap: 20px; }
 
         .schedule-item {
@@ -236,7 +229,6 @@
             line-height: 1.7;
         }
 
-        /* Dress code */
         .dress-code {
             background: linear-gradient(135deg, rgba(201,168,76,0.06) 0%, rgba(255,255,255,0.4) 100%);
             padding: 28px 24px;
@@ -245,7 +237,7 @@
             overflow: hidden;
         }
         .dress-code::before {
-            content: '✦';
+            content: '\2726';
             position: absolute;
             top: -20px; right: -20px;
             font-size: 80px;
@@ -273,7 +265,6 @@
         .dress-value { color: var(--text); }
         .highlight { color: #a0272a; font-weight: 700; }
 
-        /* Location */
         .location-text {
             font-size: 0.92rem;
             color: var(--text-light);
@@ -301,7 +292,6 @@
             box-shadow: 0 6px 28px rgba(201,168,76,0.5);
         }
 
-        /* Footer */
         .footer {
             margin-top: 44px;
             padding-top: 24px;
@@ -332,16 +322,70 @@
             <div class="frame-inner-tl"></div>
             <div class="frame-inner-br"></div>
 
-            <!-- Header -->
             <div class="header">
-                <div class="crown">&#x1F451;</div>
+                <!-- Floral ornament SVG -->
+                <svg class="floral-ornament" width="200" height="80" viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Left branch -->
+                  <path d="M100 60 C85 55 65 50 45 42" stroke="#c9a84c" stroke-width="1.2" fill="none"/>
+                  <path d="M100 60 C88 52 72 40 58 28" stroke="#c9a84c" stroke-width="1" fill="none"/>
+                  <!-- Right branch (mirrored) -->
+                  <path d="M100 60 C115 55 135 50 155 42" stroke="#c9a84c" stroke-width="1.2" fill="none"/>
+                  <path d="M100 60 C112 52 128 40 142 28" stroke="#c9a84c" stroke-width="1" fill="none"/>
+
+                  <!-- Left leaves -->
+                  <ellipse cx="72" cy="46" rx="7" ry="3.5" transform="rotate(-30 72 46)" fill="#c9a84c" opacity="0.7"/>
+                  <ellipse cx="55" cy="38" rx="6" ry="3" transform="rotate(-45 55 38)" fill="#c9a84c" opacity="0.6"/>
+                  <ellipse cx="80" cy="36" rx="6" ry="3" transform="rotate(-55 80 36)" fill="#c9a84c" opacity="0.6"/>
+                  <ellipse cx="65" cy="30" rx="5" ry="2.5" transform="rotate(-60 65 30)" fill="#c9a84c" opacity="0.5"/>
+
+                  <!-- Right leaves (mirrored) -->
+                  <ellipse cx="128" cy="46" rx="7" ry="3.5" transform="rotate(30 128 46)" fill="#c9a84c" opacity="0.7"/>
+                  <ellipse cx="145" cy="38" rx="6" ry="3" transform="rotate(45 145 38)" fill="#c9a84c" opacity="0.6"/>
+                  <ellipse cx="120" cy="36" rx="6" ry="3" transform="rotate(55 120 36)" fill="#c9a84c" opacity="0.6"/>
+                  <ellipse cx="135" cy="30" rx="5" ry="2.5" transform="rotate(60 135 30)" fill="#c9a84c" opacity="0.5"/>
+
+                  <!-- Left rose -->
+                  <circle cx="45" cy="40" r="5.5" fill="#c9a84c" opacity="0.9"/>
+                  <circle cx="45" cy="40" r="3.5" fill="#e8d08a" opacity="0.8"/>
+                  <circle cx="45" cy="40" r="1.8" fill="#c9a84c"/>
+                  <circle cx="38" cy="36" r="4" fill="#c9a84c" opacity="0.7"/>
+                  <circle cx="38" cy="36" r="2.2" fill="#e8d08a" opacity="0.7"/>
+
+                  <!-- Right rose -->
+                  <circle cx="155" cy="40" r="5.5" fill="#c9a84c" opacity="0.9"/>
+                  <circle cx="155" cy="40" r="3.5" fill="#e8d08a" opacity="0.8"/>
+                  <circle cx="155" cy="40" r="1.8" fill="#c9a84c"/>
+                  <circle cx="162" cy="36" r="4" fill="#c9a84c" opacity="0.7"/>
+                  <circle cx="162" cy="36" r="2.2" fill="#e8d08a" opacity="0.7"/>
+
+                  <!-- Small buds left -->
+                  <circle cx="58" cy="26" r="3" fill="#c9a84c" opacity="0.8"/>
+                  <circle cx="58" cy="26" r="1.5" fill="#e8d08a" opacity="0.7"/>
+
+                  <!-- Small buds right -->
+                  <circle cx="142" cy="26" r="3" fill="#c9a84c" opacity="0.8"/>
+                  <circle cx="142" cy="26" r="1.5" fill="#e8d08a" opacity="0.7"/>
+
+                  <!-- Center rose -->
+                  <circle cx="100" cy="22" r="8" fill="#c9a84c" opacity="0.95"/>
+                  <circle cx="100" cy="22" r="5.5" fill="#e8d08a" opacity="0.85"/>
+                  <circle cx="100" cy="22" r="3" fill="#c9a84c" opacity="0.9"/>
+                  <circle cx="100" cy="22" r="1.4" fill="#fffef9"/>
+
+                  <!-- Center stem -->
+                  <path d="M100 30 L100 60" stroke="#c9a84c" stroke-width="1.2" fill="none"/>
+
+                  <!-- Center leaves -->
+                  <ellipse cx="94" cy="44" rx="6" ry="2.5" transform="rotate(-20 94 44)" fill="#c9a84c" opacity="0.6"/>
+                  <ellipse cx="106" cy="50" rx="6" ry="2.5" transform="rotate(20 106 50)" fill="#c9a84c" opacity="0.6"/>
+                </svg>
+
                 <div class="royal-title">Royal Invitation</div>
                 <div class="ornament">✦</div>
                 <h1>우리의 찬란했던<br>프롤로그</h1>
                 <div class="date">2026 &nbsp;·&nbsp; 04 &nbsp;·&nbsp; 25 &nbsp;&nbsp;SAT</div>
             </div>
 
-            <!-- Schedule -->
             <div class="section">
                 <div class="section-title">The Royal Protocol</div>
                 <div class="section-divider">✦</div>
@@ -377,7 +421,6 @@
                 </div>
             </div>
 
-            <!-- Dress Code -->
             <div class="section">
                 <div class="section-title">Dress Code</div>
                 <div class="section-divider">✦</div>
@@ -397,7 +440,6 @@
                 </div>
             </div>
 
-            <!-- Location -->
             <div class="section">
                 <div class="section-title">Location</div>
                 <div class="section-divider">✦</div>
@@ -405,7 +447,6 @@
                 <button class="map-btn" onclick="window.open('https://map.kakao.com/?q=서울 성동구 성덕정길 65')">지도 보기</button>
             </div>
 
-            <!-- Footer -->
             <div class="footer">
                 <div class="footer-text">With love, for the upcoming Bride</div>
                 <div class="footer-deco">✦ &nbsp; ✦ &nbsp; ✦</div>
@@ -416,7 +457,6 @@
 </div>
 
 <script>
-    // Generate stars
     const container = document.getElementById('stars');
     for (let i = 0; i < 120; i++) {
         const s = document.createElement('div');
