@@ -1,1 +1,87 @@
-Hello World! This is a homepage of Narin Kim!
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Brilliant Prologue - Bridal Shower</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;700&family=Playfair+Display:italic,wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold: #d4af37; --cream: #fdfaf6; --text: #333; }
+        body { background-color: var(--cream); color: var(--text); font-family: 'Noto Serif KR', serif; margin: 0; padding: 0; line-height: 1.8; text-align: center; }
+        .container { max-width: 500px; margin: 0 auto; padding: 60px 20px; border: 1px solid #eee; background: white; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        
+        .header { margin-bottom: 50px; }
+        .royal-title { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: var(--gold); letter-spacing: 3px; margin-bottom: 10px; }
+        h1 { font-size: 2rem; margin: 0; font-weight: 700; color: #1a1a1a; }
+        .date { font-size: 1.1rem; margin-top: 15px; color: #666; }
+
+        .section { margin: 40px 0; padding: 0 20px; }
+        .section-title { font-weight: 700; font-size: 1.2rem; color: var(--gold); margin-bottom: 20px; position: relative; }
+        .section-title::after { content: ''; display: block; width: 30px; height: 1px; background: var(--gold); margin: 10px auto; }
+
+        .schedule-item { margin-bottom: 25px; }
+        .schedule-item h3 { font-size: 1.1rem; margin: 0; color: #222; }
+        .schedule-item p { font-size: 0.9rem; color: #777; margin: 5px 0; }
+
+        .dress-code { background: #fafafa; padding: 30px 20px; border-radius: 5px; border: 1px dashed var(--gold); }
+        .dress-code ul { list-style: none; padding: 0; font-size: 0.95rem; }
+        .dress-code li { margin-bottom: 8px; }
+        .highlight { color: #c0392b; font-weight: 700; }
+
+        .location { font-size: 0.9rem; color: #555; }
+        .footer { font-size: 0.8rem; color: #aaa; margin-top: 60px; font-style: italic; }
+        
+        button { background: var(--gold); color: white; border: none; padding: 12px 25px; border-radius: 25px; cursor: pointer; font-family: inherit; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="royal-title">Royal Invitation</div>
+            <h1>우리의 찬란했던 프롤로그</h1>
+            <div class="date">2026. 04. 25. SAT</div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">The Royal Protocol</div>
+            <div class="schedule-item">
+                <h3>1. 찬란했던 기록의 시작</h3>
+                <p>우리가 왕관을 쓰기 전, 가장 순수했던 찰나를<br>프레임 속에 다시 담아보는 시간</p>
+            </div>
+            <div class="schedule-item">
+                <h3>2. 우리는 퀸이야</h3>
+                <p>눈부신 주인공이 되어 마주하는 순간</p>
+            </div>
+            <div class="schedule-item">
+                <h3>3. 퀸들의 만찬</h3>
+                <p>가장 우아한 테이블에서 나누는 성대한 연회</p>
+            </div>
+            <div class="schedule-item">
+                <h3>4. 퀸들의 수다</h3>
+                <p>밤이 깊어질 때까지 이어지는 우리만의 비밀 회담</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Dress Code</div>
+            <div class="dress-code">
+                <ul>
+                    <li><strong>Concept:</strong> 공주, 귀족 부인, 영애 스타일의 로열 룩</li>
+                    <li><strong>Notice:</strong> 우아함을 위해 <span class="highlight">짧은 치마는 금지</span>됩니다.</li>
+                    <li><strong>Makeup:</strong> 각자의 개성을 살린 화려한 공주풍 메이크업</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Location</div>
+            <p class="location">서울 성동구 성덕정길 65</p>
+            <button onclick="window.open('https://map.kakao.com/?q=서울 성동구 성덕정길 65')">지도 보기</button>
+        </div>
+
+        <div class="footer">
+            With love, for the upcoming Bride
+        </div>
+    </div>
+</body>
+</html>
