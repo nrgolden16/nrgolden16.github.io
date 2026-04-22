@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Our Brilliant Prologue - Bridal Shower</title>
+<title>Before the Crown - Bridal Shower</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
 <style>
 :root{--gold:#c9a84c;--gl:#e8d08a;--gd:#9a7a2a;--text:#2a2118;--tl:#7a6a55}
@@ -22,14 +22,24 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .frame::after{bottom:-1px;right:-1px;border-width:0 2px 2px 0}
 .frame-tl{position:absolute;top:-1px;right:-1px;width:18px;height:18px;border:solid var(--gold);border-width:2px 2px 0 0}
 .frame-bl{position:absolute;bottom:-1px;left:-1px;width:18px;height:18px;border:solid var(--gold);border-width:0 0 2px 2px}
-.header{margin-bottom:44px}
+.header{margin-bottom:36px}
 .floral{margin:0 auto 18px;animation:float 4s ease-in-out infinite}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
 .royal-title{font-family:'Playfair Display',serif;font-size:.72rem;color:var(--gold);letter-spacing:5px;text-transform:uppercase;margin-bottom:18px}
 .ornament{display:flex;align-items:center;justify-content:center;gap:12px;margin:14px 0;color:var(--gold)}
 .ornament::before,.ornament::after{content:'';flex:1;height:1px;background:linear-gradient(to right,transparent,var(--gl),transparent)}
-h1{font-size:1.75rem;font-weight:700;color:#1a130a;line-height:1.3;letter-spacing:1px;margin:8px 0 0}
+h1{font-family:'Playfair Display',serif;font-style:italic;font-size:2.2rem;font-weight:700;color:#1a130a;line-height:1.2;letter-spacing:1px;margin:8px 0 0}
 .date{font-family:'Cormorant Garamond',serif;font-size:1rem;margin-top:16px;color:var(--tl);letter-spacing:3px}
+.photo-wrap{margin-top:28px}
+.photo-mat{background:#f5f0e8;padding:14px 14px 36px;box-shadow:inset 0 0 20px rgba(0,0,0,.08),0 8px 32px rgba(0,0,0,.15);position:relative}
+.c-tl{position:absolute;top:6px;left:6px;width:16px;height:16px;border:solid var(--gold);border-width:2px 0 0 2px}
+.c-tr{position:absolute;top:6px;right:6px;width:16px;height:16px;border:solid var(--gold);border-width:2px 2px 0 0}
+.c-bl{position:absolute;bottom:26px;left:6px;width:16px;height:16px;border:solid var(--gold);border-width:0 0 2px 2px}
+.c-br{position:absolute;bottom:26px;right:6px;width:16px;height:16px;border:solid var(--gold);border-width:0 2px 2px 0}
+.photo-outer{border:2px solid var(--gold);padding:3px}
+.photo-outer img{width:100%;display:block;object-fit:cover;min-height:180px}
+.photo-caption{background:linear-gradient(135deg,var(--gd),var(--gold));padding:7px 20px;margin:-1px 16px 0;position:relative}
+.photo-caption p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:.82rem;color:white;letter-spacing:2px}
 .section{margin:36px 0}
 .section-title{font-family:'Playfair Display',serif;font-style:italic;font-size:1.1rem;color:var(--gd);margin-bottom:6px;letter-spacing:1px}
 .divider{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto 24px;color:var(--gl)}
@@ -40,34 +50,17 @@ h1{font-size:1.75rem;font-weight:700;color:#1a130a;line-height:1.3;letter-spacin
 .snum{font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--gl);line-height:1;flex-shrink:0;margin-top:2px}
 .schedule-item h3{font-size:.95rem;font-weight:700;color:#2a1e10;margin-bottom:4px}
 .schedule-item p{font-size:.82rem;color:var(--tl);line-height:1.7}
-.dress-box{background:linear-gradient(135deg,rgba(201,168,76,.06) 0%,rgba(255,255,255,.4) 100%);padding:28px 24px;border:1px solid rgba(201,168,76,.25);position:relative;overflow:hidden}
+.dress-box{background:linear-gradient(135deg,rgba(201,168,76,.06) 0%,rgba(255,255,255,.4) 100%);padding:28px 24px;border:1px solid rgba(201,168,76,.25)}
 .dress-item{display:flex;align-items:baseline;gap:10px;text-align:left;padding:8px 0;border-bottom:1px solid rgba(201,168,76,.12);font-size:.88rem}
 .dress-item:last-child{border-bottom:none}
 .dlabel{font-family:'Playfair Display',serif;font-size:.72rem;letter-spacing:2px;color:var(--gold);text-transform:uppercase;white-space:nowrap;flex-shrink:0}
 .dval{color:var(--text)}
 .highlight{color:#a0272a;font-weight:700}
-/* Checklist */
 .checklist{display:flex;flex-direction:column;gap:10px}
 .check-item{display:flex;align-items:center;gap:14px;text-align:left;padding:10px 16px;border:1px solid rgba(201,168,76,.2);background:linear-gradient(90deg,rgba(201,168,76,.04),transparent)}
 .check-diamond{width:10px;height:10px;background:var(--gold);transform:rotate(45deg);flex-shrink:0}
 .check-text{font-size:.9rem;color:var(--text)}
 .check-text em{font-family:'Playfair Display',serif;font-style:italic;font-size:1rem;color:var(--gd);font-weight:700}
-/* Photo frame */
-.photo-exhibit{position:relative;display:inline-block;width:100%;margin:0 auto}
-.photo-mat{background:#f5f0e8;padding:18px 18px 40px;box-shadow:inset 0 0 20px rgba(0,0,0,.08),0 8px 32px rgba(0,0,0,.15)}
-.photo-border{border:1px solid rgba(201,168,76,.5);padding:4px}
-.photo-border img{width:100%;display:block;object-fit:cover}
-.photo-outer{border:2px solid var(--gold);padding:2px;position:relative}
-.photo-outer::before,.photo-outer::after{content:'✦';position:absolute;color:var(--gold);font-size:.7rem;line-height:1}
-.photo-outer::before{top:-8px;left:50%;transform:translateX(-50%)}
-.photo-outer::after{bottom:-8px;left:50%;transform:translateX(-50%)}
-.corner-deco{position:absolute;width:16px;height:16px;border-color:var(--gold);border-style:solid}
-.c-tl{top:0;left:0;border-width:2px 0 0 2px}
-.c-tr{top:0;right:0;border-width:2px 2px 0 0}
-.c-bl{bottom:28px;left:0;border-width:0 0 2px 2px}
-.c-br{bottom:28px;right:0;border-width:0 2px 2px 0}
-.photo-caption{background:linear-gradient(135deg,var(--gd),var(--gold));padding:8px 20px;margin:-1px 20px 0;position:relative;z-index:1}
-.photo-caption p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:.85rem;color:white;letter-spacing:2px}
 .location-text{font-size:.92rem;color:var(--tl);letter-spacing:.5px;margin-bottom:18px}
 .map-btn{display:inline-block;background:linear-gradient(135deg,var(--gd),var(--gold),var(--gl),var(--gold));background-size:200% auto;color:white;border:none;padding:13px 32px;cursor:pointer;font-family:'Noto Serif KR',serif;font-size:.85rem;letter-spacing:2px;transition:background-position .4s,box-shadow .3s;box-shadow:0 4px 20px rgba(201,168,76,.35)}
 .map-btn:hover{background-position:right center;box-shadow:0 6px 28px rgba(201,168,76,.5)}
@@ -119,15 +112,24 @@ h1{font-size:1.75rem;font-weight:700;color:#1a130a;line-height:1.3;letter-spacin
 </svg>
 <div class="royal-title">Royal Invitation</div>
 <div class="ornament">✦</div>
-<h1>우리의 찬란했던<br>프롤로그</h1>
+<h1>Before the Crown</h1>
 <div class="date">2026 &nbsp;·&nbsp; 04 &nbsp;·&nbsp; 25 &nbsp;&nbsp;SAT</div>
+<div class="photo-wrap">
+<div class="photo-mat">
+<div class="c-tl"></div><div class="c-tr"></div><div class="c-bl"></div><div class="c-br"></div>
+<div class="photo-outer">
+<img src="photo.jpg" alt="Before the Crown"/>
+</div>
+</div>
+<div class="photo-caption"><p>찬란했던 우리의 프롤로그</p></div>
+</div>
 </div>
 
 <div class="section">
 <div class="section-title">The Royal Protocol</div>
 <div class="divider">✦</div>
 <div class="schedule-list">
-<div class="schedule-item"><div class="snum">I</div><div><h3>찬란했던 기록의 시작</h3><p>우리가 왕관을 쓰기 전, 가장 순수했던 찰나를<br>프레임 속에 다시 담아보는 시간</p></div></div>
+<div class="schedule-item"><div class="snum">I</div><div><h3>우리의 찬란했던 프롤로그</h3><p>우리가 왕관을 쓰기 전, 가장 순수했던 찰나를<br>프레임 속에 다시 담아보는 시간</p></div></div>
 <div class="schedule-item"><div class="snum">II</div><div><h3>우리는 퀸이야</h3><p>눈부신 주인공이 되어 마주하는 순간</p></div></div>
 <div class="schedule-item"><div class="snum">III</div><div><h3>퀸들의 만찬</h3><p>가장 우아한 테이블에서 나누는 성대한 연회</p></div></div>
 <div class="schedule-item"><div class="snum">IV</div><div><h3>퀸들의 수다</h3><p>밤이 깊어질 때까지 이어지는 우리만의 비밀 회담</p></div></div>
@@ -150,26 +152,7 @@ h1{font-size:1.75rem;font-weight:700;color:#1a130a;line-height:1.3;letter-spacin
 <div class="checklist">
 <div class="check-item"><div class="check-diamond"></div><span class="check-text">로열룩 코디네이트</span></div>
 <div class="check-item"><div class="check-diamond"></div><span class="check-text">공주풍 메이크업</span></div>
-<div class="check-item"><div class="check-diamond"></div><span class="check-text">속스로 찬란하게 빛나는<br><em>YOU</em></span></div>
-</div>
-</div>
-
-<div class="section">
-<div class="section-title">Our Prologue</div>
-<div class="divider">✦</div>
-<div class="photo-exhibit">
-<div class="photo-mat">
-<div class="corner-deco c-tl"></div>
-<div class="corner-deco c-tr"></div>
-<div class="corner-deco c-bl"></div>
-<div class="corner-deco c-br"></div>
-<div class="photo-outer">
-<div class="photo-border">
-<img src="photo.jpg" alt="Our Brilliant Prologue" onerror="this.style.minHeight='200px';this.style.background='linear-gradient(135deg,#fdf3e3,#f5e6c8)';this.alt=''"/>
-</div>
-</div>
-</div>
-<div class="photo-caption"><p>찬란했던 우리의 프롤로그</p></div>
+<div class="check-item"><div class="check-diamond"></div><span class="check-text">찬란하게 빛나는 &nbsp;<em>YOU</em></span></div>
 </div>
 </div>
 
